@@ -41,46 +41,45 @@
 ## Cheat Engine Buttons
 
 ### New Scan
-- Initiates a new memory scan for a specific value.
+- Starts a new memory scan for a specific value.
 
 ### Next Scan
 - Refines the current search results based on value changes.
 
 ### Undo Scan
-- Reverts to the previous scan results.
+- Goes back to the previous scan results.
 
 ### Add Address Manually
-- Allows manual entry of a memory address.
+- Lets you enter a memory address by hand.
 
 ### Auto Assemble
-- Opens the script editor for writing assembly code.
+- Opens the script editor for writing code.
 
 ### Pointer Scan
-- Initiates a scan for pointers to a specific address.
+- Starts a scan for pointers to a specific address.
 
 ## Latest Update
 
 Cheat Engine 7.5 - Released February 23, 2023
 
 Changes:
-- Removed driver requirement for access memory regions tool
-- Added 1 byte jmp instructions
-- Added option to skip unpaged memory during scans
-- Improved reassemble() function
-- Added option to center highlighted disassembler code
-- Added individual disable option for memoryrecord hotkeys
-- Improved codefilter unwind info
-- Added support for pseudo-ops like cmpss/sd/ps/pd
-- Added ceserver commands to Lua
-- Improved ARM64 disassembler and assembler
-- Added option to save/load scanregions
-- Added option to skip loading PDB files
-- Exposed more functions to newstate threads
-- Added ranges scans to groupscan
-- Improved freeze+allow increase/decrease for signed values
-- Added DPI scaling for trainer forms and controls
-- Improved record showassigned/showashex behavior
-- Changed texttraces to save as .txt instead of .cetrace
-- Improved ccode #include functionality
-- Enhanced internal symbolhandler for stdcalled function symbols
-- Added ImageIndex property to TTreeNode in Lua
+- Removed driver requirement for access memory regions tool (no more extra drivers needed to read memory).
+- Added 1 byte jmp instructions (allows jumps in code with just one byte, making it faster).
+- Added option to skip unpaged memory during scans (avoids scanning unused memory, speeds things up).
+- Improved reassemble() function (makes rewriting code instructions better).
+- Added option to center highlighted disassembler code (makes it easier to read disassembled code).
+- Added individual disable option for memory record hotkeys (turn off specific hotkeys without affecting others).
+- Improved codefilter unwind info (gives better results when checking stack unwinding).
+- Added support for pseudo-ops like cmpss/sd/ps/pd (improves assembly language support).
+- Added ceserver commands to Lua (gives more options for scripting).
+- Improved ARM64 disassembler and assembler (better support for ARM64 games).
+- Added option to save/load scan regions (saves your memory areas for future scans).
+- Added option to skip loading PDB files (speeds up startup by not loading debug files).
+- Exposed more functions to newstate threads (more options in scripts).
+- Added ranges scans to groupscan (scan multiple memory areas at once).
+- Improved freeze+allow increase/decrease for signed values (better control over signed numbers).
+- Added DPI scaling for trainer forms and controls (makes UI look good on high-DPI screens).
+- Improved record showassigned/showashex behavior (better display of values in records).
+- Changed texttraces to save as .txt instead of .cetrace (easier to share and view logs).
+- Improved ccode #include functionality (better at including external scripts in Cheat Engine).
+- Enhanced internal symbolhandler for stdcalled function symbols (better handling of function symbols in scripts).
